@@ -1,13 +1,13 @@
-#menu_principale a {
-  color: fbff00;
+#menu_principale a h1{
+  color: #FFFF00;
   font-size: 30px;
   font-family: "Arial", calibri;
   text-decoration: none;
 }
 
-#menu a{
-  color:black;
+.menu a{
+  color: #000000;
   font-size: 20px;
-  font-family: "Arial", calibri;
+  font-family: "Liberation Sans", calibri;
   text-decoration: none;
 }
