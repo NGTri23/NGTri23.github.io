@@ -5,7 +5,7 @@ header{
   font-family: "Arial", 'Calibri';
   background-image: url('https://ngtri23.github.io/images/photo_accueil_tempo.jpg');
 }
-
+h1{text-align: center;}
 #menu_principale{
   color: #FFFF00;
   font-size: 40px;
