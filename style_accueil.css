@@ -1,20 +1,13 @@
-h1{
+#menu_principale a {
   color: fbff00;
   font-size: 30px;
   font-family: "Arial", calibri;
-}
-a{
   text-decoration: none;
 }
 
-#menu_principale{
-  color: fbff00;
-  font-size: 30px;
-  font-family: "Arial", calibri;
-}
-
-#menu{
+#menu a{
   color:black;
   font-size: 20px;
   font-family: "Arial", calibri;
+  text-decoration: none;
 }
