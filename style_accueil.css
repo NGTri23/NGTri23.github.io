@@ -1,24 +1,20 @@
+body{
+  font-family: "Arial", 'Calibri';  
+}
+header{
+  font-family: "Arial", 'Calibri';
+  background-image: url('https://ngtri23.github.io/images/photo_accueil_tempo.jpg');
+}
+
 #menu_principale{
   color: #FFFF00;
   font-size: 30px;
-  font-family: "Arial", calibri;
-  text-decoration: none;
-}
-
-#menu_principale a{
-  color: #FFFF00;
-  font-size: 30px;
-  font-family: "Arial", calibri;
   text-decoration: none;
 }
 
 .menu a{
   color: #000000;
   font-size: 20px;
-  font-family: "Arial", calibri;
   text-decoration: none;
 }
 
-#photo-accueil{
-  
-}
