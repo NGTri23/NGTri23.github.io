@@ -1,8 +1,15 @@
+@font-face {
+  font-family: 'chowfun'; /* Le nom que tu veux utiliser dans ton CSS */
+  src: url('/fonts/chowfun_.ttf') format('truetype'); /* Chemin vers le fichier */
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
-  font-family: "Arial", 'Calibri';  
+  font-family: "chowfun", 'Calibri';  
 }
 header{
-  font-family: "Arial", 'Calibri';
+  font-family: "chowfun", 'Calibri';
   background-image: url('https://ngtri23.github.io/images/photo_accueil_tempo.jpg');
 }
 h1{text-align: center;
@@ -26,3 +33,4 @@ a{
   font-size: 20px;
   display: inline-block;
 }
+
