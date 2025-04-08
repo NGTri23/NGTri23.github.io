@@ -13,7 +13,7 @@ h1{text-align: center;}
   text-decoration: none;
 }
 
-.menu a{
+.menu {
   display: flex;
   color: #000000;
   font-size: 20px;
