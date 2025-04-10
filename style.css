@@ -34,5 +34,8 @@ a{
   display: inline-block;
 }
 
-#photo-AIWTKF
-
+#photo-AIWTKF{
+	max-width: 35%;
+	height: auto;
+	display: flex
+}
