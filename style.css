@@ -14,9 +14,11 @@ header{
 }
 h1{text-align: center;
 }
+h2{font-size:3vw
+}
 #menu_principale{
   color: #FFFF00;
-  font-size: 40px;
+  font-size: 4.5vw;
   text-align: center;
   text-decoration: none;
 }
@@ -24,18 +26,27 @@ h1{text-align: center;
 .menu {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 4.5vw;
 }
 
 a{
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 2.5vw;
   display: inline-block;
 }
 
 #photo-AIWTKF{
-	max-width: 35%;
+	max-width: 35vw;
 	height: auto;
-	display: flex
+	float:right
+}
+.block_avec_image::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+#text_AIWTKF{
+	 text-align: justify;
+	font-size: 2vw;
 }
