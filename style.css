@@ -18,7 +18,7 @@ h2{font-size:3vw
 }
 #menu_principale{
   color: #FFFF00;
-  font-size: 4.5vw;
+  font-size: 3.5vw;
   text-align: center;
   text-decoration: none;
 }
@@ -26,13 +26,13 @@ h2{font-size:3vw
 .menu {
   display: flex;
   justify-content: center;
-  gap: 4.5vw;
+  gap: 3vw;
 }
 
 a{
   text-decoration: none;
   color: white;
-  font-size: 2.5vw;
+  font-size: 1.7vw;
   display: inline-block;
 }
 
