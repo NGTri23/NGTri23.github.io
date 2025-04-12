@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'chowfun'; /* Le nom que tu veux utiliser dans ton CSS */
-  src: url('/fonts/chowfun.ttf') format('truetype'); /* Chemin vers le fichier */
+  src: url('file:///C:/Users/ELEVE/Sac%20%C3%A0%20dos%205eme1/3%C2%B0/OneDrive/Sac%20%C3%A0%20dos/1er/NSI/projet%20web/code%20tempo/fonts/chowfun.ttf') format('truetype'); /* Chemin vers le fichier */
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@ header{
 }
 h1{text-align: center;
 }
-h2{font-size:3vw
+h2{font-size:150%
 }
 #menu_principale{
   color: #FFFF00;
@@ -27,6 +27,7 @@ h2{font-size:3vw
   display: flex;
   justify-content: center;
   gap: 3vw;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 a{
@@ -39,14 +40,15 @@ a{
 #photo-AIWTKF{
 	max-width: 35vw;
 	height: auto;
-	float:right
-}
-.block_avec_image::after{
-	content: "";
-	display: table;
-	clear: both;
+	float:right;
+  margin: 0% 1%;
 }
 #text_AIWTKF{
 	text-align: justify;
-	font-size: 2vw;
+	font-size: 100%;
+}
+
+#text_Wing_Tsun{
+  text-align: justify;
+	font-size: 100%;
 }
