@@ -4,13 +4,15 @@
   font-weight: normal;
   font-style: normal;
 }
-
 body{
-  font-family: "arial", 'Calibri';  
+  font-family: "arial", 'Calibri'; 
+  margin-left: 10%;
+  margin-right: 10%;
 }
 header{
   font-family: "chowfun", 'Calibri';
   background-image: url('https://ngtri23.github.io/images/photo_accueil_tempo.jpg');
+  margin: -2% -13% 0 -13%;
 }
 h1{text-align: center;
 }
@@ -34,7 +36,7 @@ a{
   text-decoration: none;
   color: white;
   font-size: 1.7vw;
-  display: inline-block;
+  display: inline;
 }
 
 #photo-AIWTKF{
@@ -43,12 +45,23 @@ a{
 	float:right;
   	margin: 0% 1%;
 }
-#text_AIWTKF{
+.text_page{
 	text-align: justify;
 	font-size: 100%;
 }
-
-#text_Wing_Tsun{
-	text-align: justify;
-	font-size: 100%;
+#content_loc{
+	max-width: 35vw;
+	height: auto;
+	float:left; 
+}
+#content_transport{
+	max-width: 35vw;
+	height: auto;
+	float:right; 
+}
+#carte_google_map{
+	max-width: 35vw;
+	height: auto;
+	float:right;
+	margin: 0% 1%;
 }
