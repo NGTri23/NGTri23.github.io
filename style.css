@@ -41,7 +41,7 @@ a{
 	max-width: 35vw;
 	height: auto;
 	float:right;
-  margin: 0% 1%;
+  	margin: 0% 1%;
 }
 #text_AIWTKF{
 	text-align: justify;
@@ -49,6 +49,6 @@ a{
 }
 
 #text_Wing_Tsun{
-  text-align: justify;
+	text-align: justify;
 	font-size: 100%;
 }
