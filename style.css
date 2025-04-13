@@ -17,7 +17,7 @@ header{
 }
 h1{text-align: center;
 }
-h2{font-size:150%
+h2{font-size:4vh
 }
 #menu_principale{
   color: #FFFF00;
@@ -48,16 +48,18 @@ h2{font-size:150%
 	float:right;
   margin: 0% 1%;
 }
-.text_page{
+.text_page p {
 	text-align: justify;
 	font-size: 2.5vh;
 }
 #content_loc{
+  font-size: 2.5vh;
   max-width: 35vw;
 	height: auto;
   float:left; 
 }
 #content_transport{
+  font-size: 2.5vh;
   max-width: 35vw;
 	height: auto;
   float:right; 
