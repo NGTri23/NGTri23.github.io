@@ -4,13 +4,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
 body{
   font-family: "arial", 'Calibri'; 
   margin-left: 10%;
   margin-right: 10%;
 }
 header{
-  font-family: "chowfun", 'Calibri';
+  font-family: "hHachimaki", 'Calibri';
   background-image: url('https://ngtri23.github.io/images/photo_accueil_tempo.jpg');
   margin: -2% -13% 0 -13%;
 }
@@ -20,22 +21,24 @@ h2{font-size:150%
 }
 #menu_principale{
   color: #FFFF00;
-  font-size: 3.5vw;
+  font-size: 4vw;
   text-align: center;
   text-decoration: none;
 }
-
+.first_letter{
+  color: #ffaf04;
+}
 .menu {
   display: flex;
   justify-content: center;
-  gap: 3vw;
+  gap: 4vw;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-a{
+.menu a{
   text-decoration: none;
   color: white;
-  font-size: 1.7vw;
+  font-size: 2vw;
   display: inline;
 }
 
@@ -43,25 +46,30 @@ a{
 	max-width: 35vw;
 	height: auto;
 	float:right;
-  	margin: 0% 1%;
+  margin: 0% 1%;
 }
 .text_page{
 	text-align: justify;
-	font-size: 100%;
+	font-size: 2.5vh;
 }
 #content_loc{
-	max-width: 35vw;
+  max-width: 35vw;
 	height: auto;
-	float:left; 
+  float:left; 
 }
 #content_transport{
-	max-width: 35vw;
+  max-width: 35vw;
 	height: auto;
-	float:right; 
+  float:right; 
 }
 #carte_google_map{
-	max-width: 35vw;
+  max-width: 35vw;
 	height: auto;
 	float:right;
-	margin: 0% 1%;
+  margin: 0% 1%;
+}
+.block_text{
+  font-size: 3.5vh;
+  text-align: justify;
+  
 }
