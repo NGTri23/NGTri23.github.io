@@ -4,9 +4,14 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'Roboto-Light'; /* Le nom que tu veux utiliser dans ton CSS */
+  src: url('/fonts/Roboto-Light.ttf') format('truetype'); /* Chemin vers le fichier */
+  font-weight: normal;
+  font-style: normal;
+}
 body{
-  font-family: "arial", 'Calibri'; 
+  font-family: "Roboto-Light", 'Calibri'; 
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -36,42 +41,71 @@ h2{font-size:4vh
 }
 
 .menu a{
+  font-family: "Roboto-Light", "hHachimaki";
+  font-weight: bold;
   text-decoration: none;
   color: white;
   font-size: 2vw;
   display: inline;
 }
-
+.lien_essentiel{
+  color:black;
+  text-decoration: underline;
+  font-style: italic;
+  
+}
+.lien_essentiel:hover{
+  color:#333;
+  font-weight: bold;
+}
 #photo-AIWTKF{
-	max-width: 35vw;
+	max-width: 25vw;
 	height: auto;
 	float:right;
   margin: 0% 1%;
 }
+#carte_google_map{
+  max-width: 40vw;
+	height: auto;
+  margin-top: 5%;
+}
+#content{
+  font-size: 2.5vh;
+  max-width: 35vw;
+	height: auto;
+}
+.slide{
+  cursor: grab;
+}
+.photo-accueil{
+  display: flex;
+  overflow-x: scroll;         /* permet de scroller horizontalement */
+  scroll-snap-type: x mandatory; /* snap = colle les images bien */
+  width: 100vw;
+  height: auto;
+  scroll-behavior: smooth;
+}
+.photo-accueil img{
+  max-width: 50vw;
+	height: auto;
+  justify-content: center;	
+  object-fit: contain;
+}
+
 .text_page p {
 	text-align: justify;
 	font-size: 2.5vh;
+  line-height: 1.8;
 }
-#content_loc{
-  font-size: 2.5vh;
-  max-width: 35vw;
-	height: auto;
-  float:left; 
-}
-#content_transport{
-  font-size: 2.5vh;
-  max-width: 35vw;
-	height: auto;
-  float:right; 
-}
-#carte_google_map{
-  max-width: 35vw;
-	height: auto;
-	float:right;
-  margin: 0% 1%;
-}
-.block_text{
-  font-size: 3.5vh;
+#block_text_règlement{
+  font-size: 2vw;
   text-align: justify;
-  
+  margin-left: 13vw;
+  margin-right: 13vw;
+  line-height: 1.5;
+}
+#block_text_info_prat{
+  text-align: justify;
+	font-size: 2.5vh;
+  line-height: 1.5;
 }
