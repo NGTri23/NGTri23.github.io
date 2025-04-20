@@ -16,34 +16,64 @@ document.querySelectorAll('.text_page p').forEach(p => {
   p.insertAdjacentElement('afterend', imgElement);
 });
 
+function openLightbox(src){
+  document.getElementById('image_lightbox').src = src;
+  document.getElementById('lightbox').style.display = 'flex';
+}
+function closeLightbox(){
+  document.getElementById('lightbox').style.display = 'none';
+}
 
-const scrollContainer = document.querySelector('.photo-accueil');
+
+const slider = document.querySelector('.photo-accueil');
 let isDown = false;
 let startX;
 let scrollLeft;
 
-scrollContainer.addEventListener('mousedown', (e) => {
+slider.addEventListener('mousedown', (e) => {
   isDown = true;
-  scrollContainer.classList.add('active');
-  startX = e.pageX - scrollContainer.offsetLeft;
-  scrollLeft = scrollContainer.scrollLeft;
-  scrollContainer.style.cursor = 'grabbing';
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
 });
-
-scrollContainer.addEventListener('mouseleave', () => {
+slider.addEventListener('mouseleave', () => {
   isDown = false;
-  scrollContainer.style.cursor = 'grab';
+  slider.classList.remove('active');
 });
-
-scrollContainer.addEventListener('mouseup', () => {
+slider.addEventListener('mouseup', () => {
   isDown = false;
-  scrollContainer.style.cursor = 'grab';
+  slider.classList.remove('active');
 });
-
-scrollContainer.addEventListener('mousemove', (e) => {
-  if (!isDown) return;
+slider.addEventListener('mousemove', (e) => {
+  if(!isDown) return;
   e.preventDefault();
-  const x = e.pageX - scrollContainer.offsetLeft;
-  const walk = (x - startX) * 1; // sensibilité
-  scrollContainer.scrollLeft = scrollLeft - walk;
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 2;
+  slider.scrollLeft = scrollLeft - walk;
 });
+
+
+
+const imageSize = window.innerWidth * 0.32;
+
+function go_left() {
+  if (slider.scrollLeft <= imageSize) {
+    slider.scrollLeft = slider.scrollWidth / 2;
+  } else {
+    slider.scrollBy({
+      left: -imageSize,
+      behavior: 'smooth'
+    });
+  }
+}
+
+function go_right() {
+  if (slider.scrollLeft + slider.clientWidth + imageSize >= slider.scrollWidth) {
+    slider.scrollLeft = 0;
+  } else {
+    slider.scrollBy({
+      left: imageSize,
+      behavior: 'smooth'
+    });
+  }
+}
