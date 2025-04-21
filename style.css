@@ -13,7 +13,6 @@
 html{
   margin: 0;
   padding: 0;
-  transform: translateY(-2%);  
 }
 body{
   font-family: "Roboto-Light", 'Calibri'; 
@@ -21,6 +20,7 @@ body{
   padding: 0;
 }
 header{
+  margin: -2vw;
   font-family: "hHachimaki", 'Calibri';
   background-color: rgba(0, 0, 0, 0.87);
 }
