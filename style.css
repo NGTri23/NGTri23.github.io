@@ -115,6 +115,7 @@ h2{font-size:4vh;
   border-top: 1vw solid grey;
   border-left: 1vw solid grey;
   border-bottom: 1vw solid grey;
+  margin-top:1vw;
 }
 .photo-accueil img{
   width:31vw;
