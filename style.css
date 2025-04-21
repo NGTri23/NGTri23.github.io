@@ -127,8 +127,8 @@ h2{font-size:4vh;
   display: none;
 }
 .arrow {
-  position:fixed;
-  top: 38%;
+  position:absolute;
+  top: 57%;
   transform: translateY(-50%);
   width: 4vw;
   height: 4vw;
