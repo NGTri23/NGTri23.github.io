@@ -115,10 +115,10 @@ h2{
   overscroll-behavior-inline: contain;
   scrollbar-width: none;
   -ms-overflow-style: none; 
-  border-top: 1vw solid grey;
   border-left: 1vw solid grey;
   border-bottom: 1vw solid grey;
   box-sizing: border-box;
+  padding-top:1vw;
 }
 .photo-accueil img{
   width:31vw;
