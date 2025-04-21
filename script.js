@@ -26,7 +26,6 @@ function closeLightbox(){
 document.getElementById('lightbox').addEventListener('click', function(e) {
   if (e.target === this) closeLightbox();
 });
-
 const slider = document.querySelector('.photo-accueil');
 let isDown = false;
 let startX;
