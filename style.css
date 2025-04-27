@@ -37,7 +37,7 @@ footer{
 .pied-page{
   margin-top: auto;
   background-color: rgb(56, 56, 56);
-  border-top: 0.5vw solid #ffaf04;
+  border-top: 0.5vw solid #ffff00;
 }
 h1{text-align: center;
   padding: 0;
@@ -58,7 +58,7 @@ h2{
   text-decoration: none;
 }
 .first_letter{
-  color: #ffaf04;
+  color: #B1F500;
 }
 .menu {
   display: flex;
