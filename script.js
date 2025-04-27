@@ -6,7 +6,6 @@ document.querySelectorAll('#block_text_règlement p').forEach(p => {
   imgElement.style.margin = "3.5vw auto";
   p.insertAdjacentElement('afterend', imgElement);
 });
-
 document.querySelectorAll('.text_page div').forEach(div => {
   const imgElement = document.createElement('img');
   imgElement.src = "https://ngtri23.github.io/images/Logo_AWTD_2.png";
@@ -15,7 +14,6 @@ document.querySelectorAll('.text_page div').forEach(div => {
   imgElement.style.margin = "3.5vw auto";
   div.insertAdjacentElement('afterend', imgElement);
 });
-
 function openLightbox(src){
   document.getElementById('image_lightbox').src = src;
   document.getElementById('lightbox').style.display = 'flex';
@@ -113,3 +111,14 @@ photoAccueil.addEventListener('scroll', () => {
     isScrolling = false;
   });
 });
+
+let bouton_menu = document.querySelector('.bouton_menu');
+let bouton_fermer = document.querySelector('.bouton_fermer');
+let body = document.querySelector('body');
+
+bouton_menu.addEventListener('click', function(){
+  body.classList.add('open')
+})
+bouton_fermer.addEventListener('click', function(){
+  body.classList.remove('open')
+})
