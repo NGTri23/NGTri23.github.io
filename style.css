@@ -161,7 +161,7 @@ h2{
   aspect-ratio: 1/1;
   object-fit: cover;
 }
-@media (min-width:200px) and (max-width: 599px) {
+@media (min-width:50px) and (max-width: 599px) {
   .photo-accueil img{
     max-width: 80vw;
   }
