@@ -16,8 +16,10 @@ html{
 }
 body{
   font-family: "Roboto-Light", 'Calibri'; 
+  min-height: 100vh;
   margin: 0;
-  padding: 0;
+  padding-bottom: 50px;
+  position: relative;
 }
 header{
   font-family: "hHachimaki", 'Calibri';
@@ -26,7 +28,13 @@ header{
   border-bottom: 1px solid rgba(0, 0, 0, 0.87);
   
 }
-footer{
+footer{  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 50px;
+  height: 50px;
   font-family: Arial, Calibri;
   font-size: 1.5vw;
 }
@@ -42,7 +50,7 @@ footer{
 h1{text-align: center;
   padding: 0;
   margin: 0;
-  padding-top: 0.5rem;
+  padding: 0.5rem;
 }
 h2{
   font-family:Calibri;
@@ -66,7 +74,7 @@ h2{
   width: 100%;
   height: 100%;
   gap: 4vw;
-  border-top: 0.5vmax solid rgba(255, 255, 0, 0.7);
+  border-top: 0.5vmax solid #ffff00;
   background-color: rgba(255, 255, 255, 0.1);
 }
 .menu p{
@@ -170,11 +178,30 @@ h2{
     height: 10vmin !important;
   }
   h1{
-    padding-top: 1.3rem;
-    padding-bottom: 0.7rem;
+    padding: 3.5vmin 0;
   }
   #menu_principale{
-    font-size: 5vmax;
+    font-size: 7vmin;
+  }
+  .contact{
+    flex-direction: column;
+  }
+  .mail p{
+    font-size: 3vmin;
+    text-align: center;
+  }
+  .bouton_contact{
+    padding-bottom: 2vmin;
+  }
+  .bouton_contact a{
+    font-size: 3vmin;
+  }
+  .social_media a{
+    padding: 0 4vmin ;
+  }
+  .social_media a img{
+    width: 7vmin;
+    height: auto;
   }
   .bouton_ouv_ferm_menu{
     display: block;
@@ -183,7 +210,7 @@ h2{
     height: 6vw;
     cursor: pointer;
     position: absolute;
-    top: 1rem;
+    top: 1.3rem;
     left: 0.5rem;
     z-index: 1001;
     align-items: center;
@@ -351,7 +378,6 @@ h2{
 .contact .mail p a:hover{
   text-decoration: underline;
 }
-
 .bouton_contact{
   float:right;
   align-items: center;
@@ -374,11 +400,11 @@ h2{
   text-decoration: underline;
 }
 .mention_legal{
-  padding-top: 0.5vw;
+  padding-top: 1vmin;
   text-align: center;
 }
 .mention_legal a{
-  font-size: 1vw;
+  font-size: 1vmin;
   text-decoration: none;
   color: #ffff00;
 }
