@@ -89,13 +89,13 @@ h2{
 .menu a:hover{
   font-style: italic;
 }
-.lien_essentiel{
+.lien_URL{
   color:blue;
   text-decoration: underline;
   font-style: italic;
   
 }
-.lien_essentiel:hover{
+.lien_URL:hover{
   color:blue;
   font-weight: bold;
 }
@@ -163,6 +163,9 @@ h2{
   object-fit: cover;
 }
 @media (min-width:50px) and (max-width: 599px) {
+  .corps_contenu div p{
+    font-size: 3vmin;
+  }
   .photo-accueil img{
     max-width: 80vw;
   }
