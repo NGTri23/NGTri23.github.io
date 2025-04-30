@@ -11,32 +11,29 @@
   font-style: normal;
 }
 html{
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 body{
+  height: 100%;
   font-family: "Roboto-Light", 'Calibri'; 
-  min-height: 100dvh;
   margin: 0;
-  padding-bottom: 50px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 header{
   font-family: "hHachimaki", 'Calibri';
   background-color: rgba(0, 0, 0, 0.87);  
   border-top: 1px solid rgba(0, 0, 0, 0.87);
   border-bottom: 1px solid rgba(0, 0, 0, 0.87);
-  
 }
-footer{  
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 50px;
-  height: 50px;
+footer{
   font-family: Arial, Calibri;
   font-size: 1.5vw;
+}
+.contenu_accueil{
+  flex-grow: 1;
 }
 .corps_contenu{
   margin-left: 10%;
@@ -106,14 +103,12 @@ h2{
   display: block;
   align-items: center;
 }
-
 #photo-AIWTKF {
   float: left;
   width: 38.5vw;
   height: auto;
   margin: 0.8vw 1.5vw 0 0;
 }
-
 .image_text_AIWTKF p {
   font-size: 2.5vh;
 }
@@ -132,7 +127,6 @@ h2{
     height: auto;
   }
 }
-
 #carte_google_map{
   max-width: 40vw;
 	height: auto;
@@ -143,7 +137,6 @@ h2{
   max-width: 35vw;
 	height: auto;
 }
-
 #image_accueil_problème{
   object-position: top;
 }
@@ -333,7 +326,6 @@ h2{
 	font-size: 2.5vh;
   line-height: 1.5;
 }
-
 #lightbox{
   position:fixed;
   top:0;
@@ -357,7 +349,6 @@ h2{
   top:5vh;
   right: 2vw;
 }
-
 .contact{
   display: flex;
   background-color: rgba(128, 128, 128, 0.2);
@@ -382,7 +373,6 @@ h2{
   float:right;
   align-items: center;
   justify-content: center;
-
 }
 .bouton_contact a{
   text-decoration: none;
