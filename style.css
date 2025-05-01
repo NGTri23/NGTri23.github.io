@@ -112,7 +112,7 @@ h2{
 .image_text_AIWTKF p {
   font-size: 2.5vh;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1000px){
   .image_text_AIWTKF {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -163,6 +163,24 @@ h2{
   object-fit: cover;
 }
 @media (min-width:50px) and (max-width: 599px) {
+  #bouton_exit{
+    position: absolute;
+    width: 5vh;
+    height: auto;
+    top:5vh;
+    right: 4vw;
+  }
+  #image_lightbox{
+    width: 55vh;
+    height: auto;
+  }
+  #text_photo_wingTsun{
+    display: flex;
+    flex-direction: column;
+  }
+  #text_page_wing_tsun,#photo-wing_tsun{
+    display: none;
+  }
   .corps_contenu div p{
     font-size: 3vmin;
   }
@@ -277,6 +295,27 @@ h2{
   .bouton_ouv_ferm_menu{
     display: none;
   }
+  #text_photo_wingTsun{
+    display: none;
+  }
+  #image_lightbox{
+    width: 70vh;
+    height: auto;
+  }
+  #bouton_exit{
+    position: absolute;
+    width: 3vw;
+    height: auto;
+    top:5vh;
+    right: 2vw;
+  }
+}
+#text_photo_wingTsun a img{
+  width: 100%;
+	height: auto;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 .image_fleche{
   position: relative;
@@ -307,10 +346,10 @@ h2{
 #text_page_wing_tsun{
   float: left;
 }
-.photo-wing_tsun{
+#photo-wing_tsun{
   float:right;
 }
-.photo-wing_tsun img{
+#photo-wing_tsun a img{
   max-width: 17vw;
 	height: auto;
   margin-left: 2vw;
@@ -344,18 +383,6 @@ h2{
   align-items: center;
   background: rgba(0, 0, 0, 0.7);
   display: none;
-}
-#image_lightbox{
-  width: 35vw;
-  height: auto;
-  
-}
-#bouton_exit{
-  position: absolute;
-  width: 3vw;
-  height: auto;
-  top:5vh;
-  right: 2vw;
 }
 .contact{
   display: flex;
