@@ -38,6 +38,7 @@ footer{
 .corps_contenu{
   margin-left: 10%;
   margin-right: 10%;
+  flex-grow: 1;
 }
 .pied-page{
   margin-top: auto;
@@ -162,6 +163,10 @@ h3{
   object-fit: cover;
 }
 @media (min-width:50px) and (max-width: 599px) {
+  .galerie img{
+    width: 100%;
+    height: auto;
+  }
   #block_text_règlement{
     text-align: justify;
     margin-left: 1.5vw;
@@ -340,6 +345,10 @@ h3{
     margin-right: 13vw;
     line-height: 1.5;
   }
+  .galerie img{
+    height: 100vh;
+    width: auto;
+  }
 }
 .image_fleche{
   position: relative;
@@ -473,8 +482,4 @@ h3{
 .galerie{
   display: flex;
   justify-content: center;
-}
-.galerie img{
-  height: 100vh;
-  width: auto;
 }
