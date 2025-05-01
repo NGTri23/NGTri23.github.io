@@ -162,6 +162,15 @@ h3{
   object-fit: cover;
 }
 @media (min-width:50px) and (max-width: 599px) {
+  #block_text_règlement{
+    text-align: justify;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    line-height: 1.5;
+  }
+  #block_text_règlement p{
+    font-size: 4vmin;
+  }
   #carte_google_map{
     max-width: 100%;
     height: auto;
@@ -324,6 +333,13 @@ h3{
     height: auto;
     margin-top: 5%;
   }
+  #block_text_règlement{
+    font-size: 2vw;
+    text-align: justify;
+    margin-left: 13vw;
+    margin-right: 13vw;
+    line-height: 1.5;
+  }
 }
 .image_fleche{
   position: relative;
@@ -368,13 +384,6 @@ h3{
 	text-align: justify;
 	font-size: 2.5vh;
   line-height: 1.8;
-}
-#block_text_règlement{
-  font-size: 2vw;
-  text-align: justify;
-  margin-left: 13vw;
-  margin-right: 13vw;
-  line-height: 1.5;
 }
 #block_text_info_prat{
   text-align: justify;
