@@ -221,18 +221,9 @@ h3{
   #menu_principale{
     font-size: 7vmin;
   }
-  .contact{
-    flex-direction: column;
-  }
   .mail p{
     font-size: 3vmin;
     text-align: center;
-  }
-  .bouton_contact{
-    padding-bottom: 2vmin;
-  }
-  .bouton_contact a{
-    font-size: 3vmin;
   }
   .social_media a{
     padding: 0 4vmin ;
@@ -428,26 +419,6 @@ h3{
   text-decoration: none;
 }
 .contact .mail p a:hover{
-  text-decoration: underline;
-}
-.bouton_contact{
-  float:right;
-  align-items: center;
-  justify-content: center;
-}
-.bouton_contact a{
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 1vw;
-  border: 0.3vw solid #ffff00;
-  border-radius: 3px;
-  font-weight: bold;
-  transition: 0.3s; 
-  align-items: center;
-  justify-content: center;
-}
-.bouton_contact a:hover{
   text-decoration: underline;
 }
 .mention_legal{
