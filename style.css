@@ -362,11 +362,9 @@ h3{
   top: 50%;
   left: 0;
   right: 0;
-  display: grid;
-  grid-auto-flow:column;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
 }
 .arrow a img{
   margin: 0 5vw;
@@ -374,6 +372,7 @@ h3{
   height: 5vw;
   background: rgba(0, 0, 0, 0.5); /* fond noir semi-transparent */
   border-radius: 50%;
+  cursor: pointer;
 }
 #wing_tsun{
   display: flex;
