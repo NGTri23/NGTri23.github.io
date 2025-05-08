@@ -41,9 +41,17 @@ footer{
   flex-grow: 1;
 }
 .pied-page{
-  margin-top: auto;
+  padding: 0.3rem 0;
   background-color: rgb(56, 56, 56);
   border-top: 0.5vw solid #ffff00;
+}
+.pied-page p{
+  margin: 0;
+  padding: 0.3rem 0;
+  font-size: 1rem;
+  color: #aaa; 
+  font-family:'Roboto-Light';
+  text-align: center;
 }
 h1{text-align: center;
   padding: 0;
@@ -163,6 +171,9 @@ h3{
   object-fit: cover;
 }
 @media (min-width:50px) and (max-width: 599px) {
+  .pied-page p, .mention_legal a{
+    font-size: 3vmin;
+  }
   .galerie img{
     width: 100%;
     height: auto;
@@ -226,10 +237,10 @@ h3{
     text-align: center;
   }
   .social_media a{
-    padding: 0 4vmin ;
+    padding: 0 2vmin ;
   }
   .social_media a img{
-    width: 7vmin;
+    width: 6vmin;
     height: auto;
   }
   .bouton_ouv_ferm_menu{
@@ -422,11 +433,11 @@ h3{
   text-decoration: underline;
 }
 .mention_legal{
-  padding-top: 1vmin;
+  padding-top: 0.3rem;
   text-align: center;
 }
 .mention_legal a{
-  font-size: 1vmin;
+  font-size: 1rem;
   text-decoration: none;
   color: #ffff00;
 }
@@ -442,8 +453,8 @@ h3{
 }
 .social_media img{
   background-color: rgba(128, 128, 128, 0.5);
-  padding: 0.3vw;
-  border-radius: 15%;
+  padding: 0.2rem;
+  border-radius: 50%;
   width: 2.5vw;
   height: auto;
 }
