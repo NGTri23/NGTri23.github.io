@@ -31,13 +31,13 @@ if (lightbox) {
 function go_left() {
   const slider = document.querySelector('.photo-accueil');
   const imageSize = window.innerWidth * 0.32;
-  if (slider.scrollLeft <= imageSize) {
-    slider.scrollLeft = slider.scrollWidth / 2;
+  if (slider.scrollLeft <=10) {
+    slider.scrollLeft = imageSize*3;
   } else {
-    slider.scrollBy({
-      left: -imageSize,
-      behavior: 'smooth'
-    });
+      slider.scrollBy({
+        left: -imageSize,
+        behavior: 'smooth'
+      });
   }}
 
 function go_right() {
@@ -59,59 +59,51 @@ if (photoAccueil) {
   let startX;
   let scrollLeft;
   let isScrolling = false;
-  
-  window.addEventListener('load', () => {
-    const scrollMax = photoAccueil.scrollWidth / 2;
-    photoAccueil.scrollLeft = scrollMax;
-  });
-  
+
   photoAccueil.addEventListener('mousedown', (e) => {
-   isDragging = true;
-   photoAccueil.classList.add('dragging');
-   startX = e.pageX - photoAccueil.offsetLeft;
-   scrollLeft = photoAccueil.scrollLeft;
-   photoAccueil.style.userSelect = 'none';
+    isDragging = true;
+    startX = e.pageX - photoAccueil.offsetLeft;
+    scrollLeft = photoAccueil.scrollLeft;
+    photoAccueil.style.userSelect = 'none';
   });
-  
+
   photoAccueil.addEventListener('mouseleave', () => {
-   isDragging = false;
-   photoAccueil.classList.remove('dragging');
-   photoAccueil.style.userSelect = '';
+    isDragging = false;
+    photoAccueil.style.userSelect = '';
   });
-  
+
   photoAccueil.addEventListener('mouseup', () => {
-   isDragging = false;
-   photoAccueil.classList.remove('dragging');
-   photoAccueil.style.userSelect = '';
+    isDragging = false;
+    photoAccueil.style.userSelect = '';
   });
-  
+
   photoAccueil.addEventListener('mousemove', (e) => {
-   if (!isDragging) return;
-   e.preventDefault();
-   const x = e.pageX - photoAccueil.offsetLeft;
-   const walk = (x - startX) * 3; // le multiplicateur ajuste la vitesse du scroll
-   photoAccueil.scrollLeft = scrollLeft - walk;
+    photoAccueil.style.userSelect = 'none';
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - photoAccueil.offsetLeft;
+    const walk = (x - startX) * 2; // le multiplicateur ajuste la vitesse du scroll
+    photoAccueil.scrollLeft = scrollLeft - walk;
   });
-  
+
   photoAccueil.addEventListener('scroll', () => {
     if (isScrolling) return;
     isScrolling = true;
-  
-    requestAnimationFrame(() => {
-      const scrollMax = photoAccueil.scrollWidth / 2;
-  
-      if (photoAccueil.scrollLeft >= scrollMax) {
-        photoAccueil.scrollLeft -= scrollMax;
-      }
-  
-      if (photoAccueil.scrollLeft <= 0) {
-        photoAccueil.scrollLeft += scrollMax;
-      }
-  
-      isScrolling = false;
-    });
+
+    const scrollMax = photoAccueil.scrollWidth / 2;
+
+    if (photoAccueil.scrollLeft >= scrollMax) {
+      photoAccueil.scrollLeft -= scrollMax;
+    }
+
+    if (photoAccueil.scrollLeft <=10) {
+      photoAccueil.scrollLeft = scrollMax;
+    }
+
+    isScrolling = false;
   });
 }
+
 let bouton_menu = document.querySelector('.bouton_menu');
 let bouton_fermer = document.querySelector('.bouton_fermer');
 let body = document.querySelector('body');
