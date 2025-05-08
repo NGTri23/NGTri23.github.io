@@ -1,6 +1,6 @@
 document.querySelectorAll('#block_text_règlement p').forEach(p => {
   const imgElement = document.createElement('img');
-  imgElement.src = "https://ngtri23.github.io/images/Logo_AWTD_2.png";
+  imgElement.src = "images/Logo_AWTD_2.png";
   imgElement.style.width = "1.5rem";
   imgElement.style.display = "block";
   imgElement.style.margin = "1.5rem auto";
@@ -8,7 +8,7 @@ document.querySelectorAll('#block_text_règlement p').forEach(p => {
 });
 document.querySelectorAll('.text_page div').forEach(div => {
   const imgElement = document.createElement('img');
-  imgElement.src = "https://ngtri23.github.io/images/Logo_AWTD_2.png";
+  imgElement.src = "images/Logo_AWTD_2.png";
   imgElement.style.width = "1.5rem";
   imgElement.style.display = "block";
   imgElement.style.margin = "2rem auto";
