@@ -114,3 +114,18 @@ bouton_menu.addEventListener('click', function(){
 bouton_fermer.addEventListener('click', function(){
   body.classList.remove('open')
 })
+
+function openLightboxGalerie(){
+  document.querySelector('.galerie_lightbox').style.display = 'flex';
+  document.querySelector('footer').style.display = 'none';
+}
+function closeLightboxGalerie(){
+  document.querySelector('.galerie_lightbox').style.display = 'none';
+  document.querySelector('footer').style.display = 'block';
+}
+const lightboxGalerie = document.querySelector('.galerie_lightbox');
+if (lightboxGalerie) {
+  lightboxGalerie.addEventListener('click', function(e) {
+    if (e.target === this) closeLightboxGalerie();
+  });
+}
